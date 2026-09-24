@@ -10,7 +10,7 @@ workflow_settings:
     - platform:
         - linux_64
         - linux_aarch64
-        - linux_ppc64le
+ #       - linux_ppc64le
         - osx_64
         - osx_arm64
         - win_64
@@ -20,12 +20,12 @@ noarch_platforms:
   - win_64
   - osx_64
   - osx_arm64
-  - linux_ppc64le
+#  - linux_ppc64le
   - linux_aarch64
 build_platform:
   osx_arm64: osx_64
   linux_aarch64: linux_64
-  linux_ppc64le: linux_64
+#  linux_ppc64le: linux_64
 provider:
   osx_arm64: default
   linux_aarch64: default
